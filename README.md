@@ -1,11 +1,11 @@
-#Journal Kernel Module 
+# Journal Kernel Module 
 @ Project Write Kernel (module) Driver
 @ Date: 1.1.2020
 @ Author: Guy Sudai
 
 Description: This kernel driver acts as a journal and can be written to or read from. 
 
-#Installation 
+# Installation 
 
 1. Run `sudo build/remove.sh` (In order to remove the previous running kernel module).
 2. Use `sudo build/create.sh` (In order to compile the journal.c file, and insmod the compiled kernel module).
