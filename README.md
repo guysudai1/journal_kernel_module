@@ -1,7 +1,7 @@
 # Journal Kernel Module 
-@ Project Write Kernel (module) Driver
-@ Date: 1.1.2020
-@ Author: Guy Sudai
++ Project Write Kernel (module) Driver
++ Date: 1.1.2020
++ Author: Guy Sudai
 
 Description: This kernel driver acts as a journal and can be written to or read from. 
 
