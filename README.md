@@ -3,7 +3,12 @@
 + Date: 1.1.2020
 + Author: Guy Sudai
 
-Description: This kernel driver acts as a journal and can be written to or read from. 
+### Description
+The kernel driver (/dev/journal) can be written to, read from, opened and released.  
++ In order to use it, you must use:
+  + `read(journal_fd, buffer, 1500)`
+  + `write(journal_fd, buffer, <1500)`
++ This journal can only be opened once.
 
 # Installation 
 
