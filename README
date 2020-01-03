@@ -9,10 +9,9 @@ Description: This kernel driver acts as a journal and can be written to or read 
 
 Install: 
 
-1. Use the ./remove.sh script in the build directory in order to remove the current running journal.
-2. Use the ./create.sh in order to create the new driver into kernel
-3. Use 
-$ sudo mknod /dev/journal MAJOR_NUM 0 
-in order to create a new device in /dev/journal.
-
+1. Use "sudo ./remove.sh" script in the build directory in order to remove the current running journal.
+2. Use "sudo ./create.sh" in order to create the new driver into kernel
+3. Get major number from dmesg with 'watch -c "dmesg | tail -n 15"'
+4. Launch "sudo ./create_dev.sh" in order to create the new device driver at /dev/journal
+5. Use it with open,read,write,release.
 
